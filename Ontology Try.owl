@@ -1,0 +1,1712 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IsContainedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IsContainedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IsContainedIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IsIngredientIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IsIngredientIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IsContainedIn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasIngredient"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Contains"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasNutrient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasNutrient">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Contains"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#isNutrientIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasStateOfMatter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasStateOfMatter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#isNutrientIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#isNutrientIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IsContainedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ActionGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ActionGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Adults -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Adults">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AgeAppropriate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AdventureGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AdventureGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AgeAppropriate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AgeAppropriate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AmountOfPlayers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AmountOfPlayers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Arms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Arms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#UsedBodyparts"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#None"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Ball -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Ball">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportMaterials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Bat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Bat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportMaterials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Beerglass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Beerglass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Glass"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wineglass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BloodPressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BloodPressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#VitalSigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BodyInjuries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BodyInjuries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Injuries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BodyTemperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BodyTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#VitalSigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Boiled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Boiled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CRPG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CRPG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RoleplayingGames"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieBurn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieBurn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieIntake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieIntake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Calories -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Calories">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CarboHydrates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CarboHydrates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportMaterials"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Ball"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Bat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Horse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Racket"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChestPain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChestPain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Childs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Childs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AgeAppropriate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Coffeecups -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Coffeecups">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cups"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Teacups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Console -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Console">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cooked -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cooked">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingKnife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingKnife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingMethod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingTools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingTools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CooperativeGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CooperativeGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GamePlayersTotal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cough -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cough">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cups -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cups">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Drinks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Drinks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Food"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Drug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Drug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FantasyGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FantasyGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fever -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fever">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fiber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fiber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FightingGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FightingGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FirstPersonShooterGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FirstPersonShooterGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ShooterGames"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ThirdPersonShooterGames"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FoodAllergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FoodAllergy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Utensils"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Utensils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#French -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#French">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fried -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fried">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GamePlayersTotal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GamePlayersTotal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Glass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Glass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gluten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gluten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FoodAllergy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Greek -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Greek">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Grilled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Grilled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Head -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Head">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#UsedBodyparts"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#None"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HeadInjuries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HeadInjuries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Injuries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HeadPain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HeadPain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Health"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Heartbeat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Heartbeat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#VitalSigns"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighBloodPressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighBloodPressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BloodPressure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCalorieBurn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCalorieBurn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieBurn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCalorieIntake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCalorieIntake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieIntake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCalories -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCalories">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Calories"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCarboHydrates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCarboHydrates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CarboHydrates"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighFat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighFat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighFiber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighFiber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fiber"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighHeadAche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighHeadAche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HeadPain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighMinerals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighMinerals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighProtein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighProtein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Protein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighRepetitiveness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighRepetitiveness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Repetitiveness"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowRepetitiveness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighSaturatedFat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighSaturatedFat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SaturatedFat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Horse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Horse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportMaterials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Indian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Indian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Injuries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Injuries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IrregularHeartbeat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IrregularHeartbeat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Heartbeat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RegularHeartbeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Italian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Italian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#JRPG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#JRPG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RoleplayingGames"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Japanese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Japanese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#KnifeEating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#KnifeEating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Lactose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Lactose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FoodAllergy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LargeBeerGlass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LargeBeerGlass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Beerglass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LargeSpoon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LargeSpoon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spoon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Legs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Legs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#UsedBodyparts"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#None"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Liquid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Liquid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#StateOfMatter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowBloodPressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowBloodPressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BloodPressure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCalorieBurn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCalorieBurn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieBurn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCalorieIntake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCalorieIntake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieIntake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCalories -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCalories">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Calories"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCarboHydrates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCarboHydrates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CarboHydrates"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowFat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowFat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowFiber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowFiber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fiber"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowMinerals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowMinerals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowProtein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowProtein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Protein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowRepetitiveness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowRepetitiveness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Repetitiveness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowSaturatedFat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowSaturatedFat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SaturatedFat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MMORPG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MMORPG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RoleplayingGames"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumBeerGlass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumBeerGlass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Beerglass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumFork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumFork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fork"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallFork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumHeadAche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumHeadAche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HeadPain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumKnife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumKnife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#KnifeEating"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallKnife"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumSpoon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumSpoon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spoon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCalorieBurn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCalorieBurn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieBurn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCalorieIntake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCalorieIntake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieIntake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCalories -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCalories">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Calories"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCarboHydrates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCarboHydrates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CarboHydrates"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidFat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidFat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidFiber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidFiber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fiber"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidMinerals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidMinerals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidProtein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidProtein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Protein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidSaturatedFat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidSaturatedFat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SaturatedFat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MildHeadAche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MildHeadAche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HeadPain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Minerals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Minerals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Mugs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Mugs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Multiplayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Multiplayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GamePlayersTotal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MusclePain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MusclePain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#None -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#None">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#UsedBodyparts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#NormalBloodPressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#NormalBloodPressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BloodPressure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FoodAllergy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Oven -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Oven">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingTools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingTools"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Peeler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Peeler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PhysicalTherapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PhysicalTherapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Therapy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Plate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Plate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PlayStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PlayStation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Console"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Protein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Protein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PuzzleGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PuzzleGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Racket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Racket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportMaterials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Radiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Radiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Raw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Raw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RegularHeartbeat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RegularHeartbeat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Heartbeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Repetitiveness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Repetitiveness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RoleplayingGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RoleplayingGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SaturatedFat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SaturatedFat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ShooterGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ShooterGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SinglePlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SinglePlayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GamePlayersTotal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallBeerGlass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallBeerGlass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Beerglass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallFork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallFork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallKnife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallKnife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#KnifeEating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallSpoon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallSpoon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spoon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Solid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Solid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#StateOfMatter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SolidFoods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SolidFoods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SoloSports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SoloSports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AmountOfPlayers"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TeamSports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spanish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spanish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spatula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spatula">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SpeechTherapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SpeechTherapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Therapy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SpiritualInjuries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SpiritualInjuries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Injuries"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spoon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spoon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Sport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Sport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportMaterials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportMaterials"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#StateOfMatter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#StateOfMatter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Steamed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Steamed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Surgical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Surgical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Symptoms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Teacups -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Teacups">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TeamSports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TeamSports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AmountOfPlayers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Therapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ThirdPersonShooterGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ThirdPersonShooterGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ShooterGames"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TimeIndication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TimeIndication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#UsedBodyparts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#UsedBodyparts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Utensils -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Utensils"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Vegan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Vegan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Vegetarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Vegetarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cuisine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#VitalSigns -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#VitalSigns">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Vitamin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Vitamin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WarGames -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WarGames">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wii -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wii">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Console"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wineglass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wineglass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Glass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WoodenSpoon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WoodenSpoon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingTools"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#XBox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#XBox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Console"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#YoungAdults -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#YoungAdults">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AgeAppropriate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#30_To_60Minutes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#30_To_60Minutes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TimeIndication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#5_To_30Minutes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#5_To_30Minutes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TimeIndication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#5-Minutes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#5-Minutes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TimeIndication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#60+Minutes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#60+Minutes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TimeIndication"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingKnife"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Peeler"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spatula"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WoodenSpoon"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cups"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fork"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Glass"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#KnifeEating"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Mugs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Plate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spoon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Spork"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighBloodPressure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowBloodPressure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#NormalBloodPressure"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCalorieBurn"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCalorieBurn"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCalorieBurn"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCalorieIntake"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCalorieIntake"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCalorieIntake"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCalories"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCalories"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCalories"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighCarboHydrates"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowCarboHydrates"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidCarboHydrates"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighFat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowFat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidFat"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighFiber"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowFiber"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidFiber"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighMinerals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowMinerals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidMinerals"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighSaturatedFat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LowSaturatedFat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MidSaturatedFat"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LargeBeerGlass"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumBeerGlass"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallBeerGlass"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LargeSpoon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumSpoon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallSpoon"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PlayStation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wii"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#XBox"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#30_To_60Minutes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#5_To_30Minutes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#5-Minutes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#60+Minutes"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
