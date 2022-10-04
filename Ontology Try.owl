@@ -94,38 +94,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ActionGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ActionGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Adults -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Adults">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AgeAppropriate"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AdventureGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AdventureGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AgeAppropriate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AgeAppropriate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AmountOfPlayers -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AmountOfPlayers">
@@ -200,14 +168,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CRPG -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CRPG">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RoleplayingGames"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieBurn -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CalorieBurn">
@@ -262,14 +222,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Childs -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Childs">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AgeAppropriate"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Chinese -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Chinese">
@@ -287,26 +239,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Console -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Console">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Environment"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cooked -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cooked">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingMethod"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
     </owl:Class>
     
 
@@ -329,14 +265,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingTools">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CooperativeGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CooperativeGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GamePlayersTotal"/>
     </owl:Class>
     
 
@@ -382,22 +310,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Environment -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Environment">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FantasyGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FantasyGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fat -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fat">
@@ -418,23 +330,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fiber">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FightingGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FightingGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FirstPersonShooterGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FirstPersonShooterGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ShooterGames"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ThirdPersonShooterGames"/>
     </owl:Class>
     
 
@@ -491,28 +386,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fried">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingMethod"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GamePlayersTotal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GamePlayersTotal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gaming"/>
     
 
 
@@ -725,14 +598,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#JRPG -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#JRPG">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RoleplayingGames"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Japanese -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Japanese">
@@ -878,14 +743,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MMORPG -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MMORPG">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RoleplayingGames"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumBeerGlass -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumBeerGlass">
@@ -1024,14 +881,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Multiplayer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Multiplayer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GamePlayersTotal"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MusclePain -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MusclePain">
@@ -1078,14 +927,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PC -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PC">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Environment"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pain -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pain">
@@ -1127,14 +968,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PlayStation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PlayStation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Console"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pot -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Pot">
@@ -1147,14 +980,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Protein">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PuzzleGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PuzzleGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
     </owl:Class>
     
 
@@ -1205,34 +1030,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RoleplayingGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RoleplayingGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SaturatedFat -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SaturatedFat">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Nutrients"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ShooterGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ShooterGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SinglePlayer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SinglePlayer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GamePlayersTotal"/>
     </owl:Class>
     
 
@@ -1348,14 +1149,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportMaterials -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SportMaterials"/>
@@ -1412,14 +1205,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Therapy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Treatment"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ThirdPersonShooterGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ThirdPersonShooterGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ShooterGames"/>
     </owl:Class>
     
 
@@ -1486,22 +1271,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WarGames -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WarGames">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GameGenre"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wii -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wii">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Console"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wineglass -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wineglass">
@@ -1515,22 +1284,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WoodenSpoon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingTools"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#XBox -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#XBox">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Console"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#YoungAdults -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#YoungAdults">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#AgeAppropriate"/>
     </owl:Class>
     
 
@@ -1685,14 +1438,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#LargeSpoon"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MediumSpoon"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallSpoon"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PlayStation"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wii"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#XBox"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
