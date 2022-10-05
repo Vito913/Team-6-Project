@@ -544,6 +544,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Gas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#StateOfMatter"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Glass -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Glass">
@@ -1330,13 +1338,95 @@
 
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BadmintonRacket -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BadmintonRacket"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BadmintonRacket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Racket"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BaseballBat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BaseballBat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Bat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BasketBall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BasketBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TeamSports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BasketBallBall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BasketBallBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Ball"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BasketSteamed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BasketSteamed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Steamed"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Bat -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Bat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackBishop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackBishop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackKing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackKing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackKnight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackKnight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackPawns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackPawns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackQueen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackQueen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackRook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#BlackRook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1348,15 +1438,97 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CharcoalGrilled -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CharcoalGrilled">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Grilled"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ContinuousFever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ContinuousFever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fever"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CricketBat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CricketBat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Bat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CriticalHeatfluxBoiling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CriticalHeatfluxBoiling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Boiled"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Dancing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Dancing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SoloSports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#DeepFried -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#DeepFried">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fried"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#DryCough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#DryCough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cough"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FootBall -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FootBall"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FootBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TeamSports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FootBallBall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FootBallBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Ball"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Football -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Football"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GasGrilled -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GasGrilled">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Grilled"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1364,6 +1536,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GlutenAllergy">
         <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FoodAllergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Golf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Golf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SoloSports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GolfBall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#GolfBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Ball"/>
     </owl:NamedIndividual>
     
 
@@ -1401,6 +1589,30 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Horse -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Horse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IceHockey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IceHockey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TeamSports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IceSkating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IceSkating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SoloSports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IntermittentFever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IntermittentFever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fever"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1512,6 +1724,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MicrowaveSteamed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MicrowaveSteamed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Steamed"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MildChestPain -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#MildChestPain">
@@ -1544,10 +1764,42 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#NucleateBoiling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#NucleateBoiling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Boiled"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#NutAllergy -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#NutAllergy">
         <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FoodAllergy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#OvenSteamed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#OvenSteamed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Steamed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PanFried -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#PanFried">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fried"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ParoxysmalCough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ParoxysmalCough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cough"/>
     </owl:NamedIndividual>
     
 
@@ -1574,6 +1826,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RelapsingFever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RelapsingFever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fever"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RemittentFever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RemittentFever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Fever"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RightArm -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RightArm"/>
@@ -1590,13 +1858,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Rugby">
         <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HighIntensitySport"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TeamSports"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RugbyBall -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RugbyBall"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#RugbyBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Ball"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1624,6 +1895,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Skating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Skating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SoloSports"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallBeerglass -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SmallBeerglass">
@@ -1632,9 +1911,43 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SoftBall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SoftBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Ball"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Surfing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Surfing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SoloSports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Swimming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Swimming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SoloSports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TableTennisRacket -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TableTennisRacket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Racket"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TennisRacket -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TennisRacket"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TennisRacket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Racket"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1644,10 +1957,90 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TransitionBoiling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TransitionBoiling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Boiled"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#VolleyBall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#VolleyBall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#TeamSports"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WetCough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WetCough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Cough"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteBishop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteBishop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteKing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteKing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteKnight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteKnight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhitePawns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhitePawns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteQueen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteQueen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteRook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteRook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ChessBoard"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteWineglass -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WhiteWineglass">
         <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Wineglass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WireBallBat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#WireBallBat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Bat"/>
     </owl:NamedIndividual>
     
 
@@ -1660,7 +2053,10 @@
 
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Yogamat -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Yogamat"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Yogamat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Yoga"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Yogamat"/>
+    </owl:NamedIndividual>
     
 
 
