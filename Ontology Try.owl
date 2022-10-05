@@ -111,6 +111,53 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Uses">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Contains"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingTools"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#canBeDrankWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#canBeDrankWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Drinks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForDrinking"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#canBeEatenWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#canBeEatenWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#SolidFoods"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForEating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#canBeTreatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#canBeTreatedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HealthIssues"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HealthTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#canReactTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#canReactTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#FoodAllergy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Food"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasIngredient -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasIngredient">
@@ -135,7 +182,10 @@
 
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasStateOfMatter -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasStateOfMatter"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#hasStateOfMatter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#StateOfMatter"/>
+    </owl:ObjectProperty>
     
 
 
@@ -144,6 +194,26 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#isNutrientIn">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IsContainedIn"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#isUsedin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#isUsedin">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#IsContainedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#CookingTools"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#ForCooking"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#Recipe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#treats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#treats">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HealthTreatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/8/untitled-ontology-4#HealthIssues"/>
     </owl:ObjectProperty>
     
 
