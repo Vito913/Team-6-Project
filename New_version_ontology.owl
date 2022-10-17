@@ -25,6 +25,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#CanCause">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#IsCausedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HealthIssues"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Sport"/>
@@ -37,6 +39,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Nutrients"/>
     </owl:ObjectProperty>
@@ -56,6 +60,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HasIngredient">
         <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#hasFood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
     </owl:ObjectProperty>
@@ -65,6 +70,8 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Hurts -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Hurts">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HealthIssues"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#BodyPart"/>
     </owl:ObjectProperty>
@@ -74,7 +81,9 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#IncreasedRiskFor -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#IncreasedRiskFor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRisk"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRiskSport"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Injury"/>
     </owl:ObjectProperty>
     
@@ -91,7 +100,6 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#IsSymptomOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#IsSymptomOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Symptom"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HealthIssues"/>
     </owl:ObjectProperty>
@@ -101,7 +109,6 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#PlayedWith -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#PlayedWith">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Sport"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#SportMaterials"/>
@@ -123,6 +130,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#RelatedTo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Person"/>
     </owl:ObjectProperty>
@@ -132,7 +140,6 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#RepeatablyUses -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#RepeatablyUses">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#BodyPart"/>
     </owl:ObjectProperty>
@@ -142,7 +149,6 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Uses -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Uses">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#BodyPart"/>
     </owl:ObjectProperty>
@@ -152,6 +158,7 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#hasFood -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#hasFood">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
     </owl:ObjectProperty>
@@ -183,7 +190,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRisk"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRiskSport"/>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Injury"/>
@@ -277,13 +284,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#SoloSport"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Uses"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#BodyPart"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -300,7 +300,11 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Dairy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighFat"/>
+                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
                         <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighMineral"/>
@@ -416,7 +420,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Fruit"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
                         <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighFibers"/>
@@ -437,6 +441,33 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FruitBowl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FruitBowl">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HasIngredient"/>
+                                <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Apple"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HasIngredient"/>
+                                <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Banana"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
     </owl:Class>
     
 
@@ -466,7 +497,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Grains"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
                         <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighCalories"/>
@@ -539,7 +570,7 @@
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HasIngredient"/>
                         <owl:someValuesFrom>
                             <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
+                                <owl:intersectionOf rdf:parseType="Collection">
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
                                         <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighFibers"/>
@@ -548,7 +579,7 @@
                                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
                                         <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#LowFat"/>
                                     </owl:Restriction>
-                                </owl:unionOf>
+                                </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
                     </owl:Restriction>
@@ -560,9 +591,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRisk -->
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRiskSport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRisk">
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRiskSport">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#RepeatablyUses"/>
@@ -625,7 +656,7 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Injury"/>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRisk"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRiskSport"/>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <owl:Restriction>
@@ -654,7 +685,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRisk"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighRiskSport"/>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Injury"/>
@@ -697,7 +728,7 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HasIngredient"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Tomato"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Tomatosaus"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -713,7 +744,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Meat"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
                         <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighCalories"/>
@@ -785,7 +816,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Nut"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
                         <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighCalories"/>
@@ -935,6 +966,17 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Sauce -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Sauce">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighCalories"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
     </owl:Class>
     
@@ -1198,6 +1240,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Fruit"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Arm -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Arm">
@@ -1241,7 +1291,7 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Cheese -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Cheese">
-        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Dairy"/>
     </owl:NamedIndividual>
     
 
@@ -1505,9 +1555,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Tomato -->
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Tomatosaus -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Tomato">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Tomatosaus">
         <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Sauce"/>
     </owl:NamedIndividual>
     
@@ -1518,6 +1568,27 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Walnut">
         <rdf:type rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Nut"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Dairy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Fruit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Grains"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Meat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Nut"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
