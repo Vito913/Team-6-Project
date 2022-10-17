@@ -55,6 +55,7 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HasIngredient -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HasIngredient">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#hasFood"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
     </owl:ObjectProperty>
@@ -90,6 +91,7 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#IsSymptomOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#IsSymptomOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Symptom"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HealthIssues"/>
     </owl:ObjectProperty>
@@ -99,6 +101,7 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#PlayedWith -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#PlayedWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Sport"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#SportMaterials"/>
@@ -116,10 +119,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#RelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#RelatedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Person"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#RepeatablyUses -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#RepeatablyUses">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Sport"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#BodyPart"/>
     </owl:ObjectProperty>
     
@@ -128,7 +142,8 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Uses -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Uses">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Sport"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#BodyPart"/>
     </owl:ObjectProperty>
     
@@ -262,6 +277,13 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#SoloSport"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Uses"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#BodyPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
