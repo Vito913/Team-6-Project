@@ -1,16 +1,39 @@
 import tweepy
-import configure as c
-import os
-
-os.environ["TOKEN"] = c.Bearer_Token
-client = tweepy.client(bearer_token=c.Bearer_Token)
-
-def auth():
-    return os.getenv("TOKEN")
+import configparser
+import pandas as pd
+import helpers as h
 
 
-response = client.search_recent_tweets(q="from:twitterdev", max_results=10)
+config = configparser.ConfigParser()
+config.read('config.ini')
 
-for tweet in response.data:
-    print(tweet.text)
-    
+api_key = config['twitter']['api_key']
+api_key_secret = config['twitter']['api_key_secret']
+
+access_token = config['twitter']['access_token']
+access_token_secret = config['twitter']['access_token_secret']
+
+auth = tweepy.OAuthHandler(api_key, api_key_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth)
+
+
+def get_query_tweets(query, count=10):
+    return api.search(q=query, count=count)
+
+column = ["name", "text","likes","retweets","date"]
+data = []
+
+# gets the tweets for the query and appends them to the a dataframe
+def get_tweet_dataframe(query):
+    tweets = get_query_tweets(query)
+    for tweet in tweets:
+        name = tweet.user.screen_name
+        text = tweet.text
+        likes = tweet.favorite_count
+        retweets = tweet.retweet_count
+        date = tweet.created_at
+        data.append([name, text, likes, retweets, date])
+    df = pd.DataFrame(data, columns=column)
+    df.to_csv("tweets.csv")
+    return df
