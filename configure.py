@@ -1,5 +1,3 @@
-from twitter import API_Key, API_Key_Secret
-
 
 API_Key = "H9VggbEKM9znXziBqB1lHXPHC"
 API_Key_Secret = "jXhxjZWFmMRDqaZgzwNpSHVpyj5xuGxcVjU6iKzyrjLxXdvJog"
