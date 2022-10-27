@@ -6,6 +6,8 @@ class Agent:
     
     def __init__(self, path="ontology.owl"):
         self.onto = get_ontology(path).load()
+        self.class_type = type(list(self.onto.classes())[0])
+        self.propery_type = type(list(self.onto.properties())[0])
         with self.onto:
             sync_reasoner(infer_property_values=True)
     
