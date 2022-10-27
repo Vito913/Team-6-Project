@@ -1,28 +1,33 @@
 from owlready2 import *
 from pprint import pprint
-from nltk.corpus import WordNet
+from nltk.corpus import wordnet
 
 class Agent:
     
     def __init__(self, path="ontology.owl"):
+        # Loads ontology to self.onto
         self.onto = get_ontology(path).load()
         self.class_type = type(list(self.onto.classes())[0])
         self.propery_type = type(list(self.onto.properties())[0])
+        # Sanity check
         with self.onto:
-            sync_reasoner(infer_property_values=True)
+            sync_reasoner_pellet()
     
     def sanity_check(self):
-        pprint(self.onto.classes)
-        pprint(self.onto.properties)
-        pprint(self.onto.individuals)
-    
+        print("Classes: "+ "\n")
+        for i in self.onto.classes():
+            print(i)
+        print("\n")
+        print("Properties:"+"\n")
+        for i in self.onto.properties():
+            print(i)
+        
     def query(self, query):
         #the query is transformed into a list of words
         whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
         transformedInput = ''.join(filter(whitelist.__contains__, query))
         sentenceListUncap = transformedInput.split()
         sentenceList = map(lambda word: word.capitalize(), sentenceListUncap)
-
         #looping over the list and mapping words to something in the ontology if possible
         interpretableList = []
         for i in sentenceList:
@@ -32,7 +37,7 @@ class Agent:
                 interpretableList.append(ontList[0])
             else:
                 synonyms = []
-                for syn in WordNet.synsets(i.lower()):
+                for syn in wordnet.synsets(i.lower()):
                     for j in syn.lemmas():
                      synonyms.append(j.name())
                 for synonym in synonyms:
@@ -41,5 +46,4 @@ class Agent:
                     if synList:
                         interpretableList.append(synList[0])
                         break
-
         return interpretableList
