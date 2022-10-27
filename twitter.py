@@ -23,7 +23,7 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 # dataframe seatup
-column = ["id","text"]
+column = ["text","user_name","created_at","number_of_likes"]
 data = []
 
 
@@ -35,19 +35,13 @@ client = tweepy.Client(bearer_token=bearer_token)
 
 # gets the tweets for the query and appends them to the a dataframe
 def get_tweet_dataframe(query):
+    query = query + " -filter:retweets"
     all_tweets = []
-    tweets = client.search_recent_tweets(query, max_results=10)
+    tweets = api.search_tweets(query, count=10)
     for tweet in tweets:
-        print(tweet)
-        parsed_tweet = {}
-        parsed_tweet["author"] = tweet.user.name
-        parsed_tweet["text"] = tweet.text
-        parsed_tweet["number_of_likes"] = tweet.favorite_count
-        parsed_tweet["retweets"] = tweet.retweet_count
-        date = tweet["created_at"] = tweet.created_at
-        all_tweets.append(parsed_tweet)
+        all_tweets.append([tweet.text,tweet.user.screen_name,tweet.created_at,tweet.favorite_count])
     df = pd.DataFrame(all_tweets, columns=column)
-    df.to_csv("tweets.csv")
+    df.to_csv("tweets.csv",mode='a')
     return df
 
 print(get_tweet_dataframe("test"))
