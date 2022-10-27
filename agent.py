@@ -18,7 +18,7 @@ class Agent:
         #the query is transformed into a list of words
         whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
         transformedInput = ''.join(filter(whitelist.__contains__, query))
-        sentenceListUncap = transformedInput1.split()
+        sentenceListUncap = transformedInput.split()
         sentenceList = map(lambda word: word.capitalize(), sentenceListUncap)
 
         #looping over the list and mapping words to something in the ontology if possible
