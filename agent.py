@@ -27,17 +27,17 @@ class Agent:
         interpretableList = []
         for i in sentenceList:
             searchWord = '*' + i
-            ontList = onto.search(iri = searchWord)
+            ontList = self.onto.search(iri = searchWord)
             if ontList:
                 interpretableList.append(ontList[0])
             else:
                 synonyms = []
-                for syn in wordnet.synsets(i.lower()):
+                for syn in WordNet.synsets(i.lower()):
                     for j in syn.lemmas():
                      synonyms.append(j.name())
                 for synonym in synonyms:
                     searchSynonym = '*' + synonym.capitalize()
-                    synList = onto.search(iri = searchSynonym)
+                    synList = self.onto.search(iri = searchSynonym)
                     if synList:
                         interpretableList.append(synList[0])
                         break
