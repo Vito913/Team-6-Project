@@ -21,6 +21,10 @@ class Agent:
         print("Properties:"+"\n")
         for i in self.onto.properties():
             print(i)
+            
+    def from_text_to_qeury(self, df):
+        text = df.iloc[0]['text']
+        
         
     def query(self, query):
         #the query is transformed into a list of words
@@ -47,3 +51,4 @@ class Agent:
                         interpretableList.append(synList[0])
                         break
         return interpretableList
+    

@@ -1,7 +1,7 @@
 from agent import Agent
 import twitter
 import helpers as h
-import pandas as pd
+
 
 def main():
     h.delete_data()

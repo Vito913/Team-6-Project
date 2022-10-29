@@ -1,8 +1,6 @@
 import tweepy
 import configparser
 import pandas as pd
-import helpers as h
-
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -30,18 +28,17 @@ data = []
 client = tweepy.Client(bearer_token=bearer_token)
 
 
-
-
-
 # gets the tweets for the query and appends them to the a dataframe
 def get_tweet_dataframe(query):
-    query = query + " -filter:retweets"
     all_tweets = []
-    tweets = api.search_tweets(query, count=10)
+    tweets = api.search_tweets(query, count=10)#result_type="popular"
     for tweet in tweets:
         all_tweets.append([tweet.text,tweet.user.screen_name,tweet.created_at,tweet.favorite_count])
     df = pd.DataFrame(all_tweets, columns=column)
+        
     df.to_csv("tweets.csv",mode='a')
     return df
 
-print(get_tweet_dataframe("test"))
+# Get the text from the first tweet in the dataframe
+print(get_tweet_dataframe("Which sports can cause a Head Injury").iloc[0]['text'])
+print(get_tweet_dataframe("").iloc[0]['text'])
