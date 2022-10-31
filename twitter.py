@@ -39,6 +39,3 @@ def get_tweet_dataframe(query):
     df.to_csv("tweets.csv",mode='a')
     return df
 
-# Get the text from the first tweet in the dataframe
-print(get_tweet_dataframe("Which sports can cause a Head Injury").iloc[0]['text'])
-print(get_tweet_dataframe("").iloc[0]['text'])
