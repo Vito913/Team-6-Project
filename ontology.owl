@@ -312,7 +312,17 @@
 
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ConsumableThing -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ConsumableThing"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ConsumableThing">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Nutrients"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
@@ -407,6 +417,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodItem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ConsumableThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#hasNutrients"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -593,13 +609,32 @@
 
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Health -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Health"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Health">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodAllergy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Injury"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Symptom"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HealthIssues -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HealthIssues">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#FoodAllergy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Injury"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Symptom"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Health"/>
     </owl:Class>
     
@@ -633,6 +668,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#UnhealthyRecipe"/>
     </owl:Class>
     
 
