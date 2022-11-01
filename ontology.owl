@@ -264,7 +264,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#UnhealthyRecipe"/>
     </owl:Class>
     
 
@@ -523,7 +523,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HealthyRecipe"/>
     </owl:Class>
     
 
@@ -643,30 +643,6 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HealthyRecipe -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HealthyRecipe">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HasIngredient"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
-                                        <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighFibers"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
-                                        <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#LowFat"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#UnhealthyRecipe"/>
     </owl:Class>
@@ -815,7 +791,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#UnhealthyRecipe"/>
     </owl:Class>
     
 
@@ -974,7 +950,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#UnhealthyRecipe"/>
     </owl:Class>
     
 
@@ -1016,7 +992,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HealthyRecipe"/>
     </owl:Class>
     
 
@@ -1216,30 +1192,6 @@
     <!-- http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#UnhealthyRecipe -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#UnhealthyRecipe">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HasIngredient"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
-                                        <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighCalories"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#ContainsNutrients"/>
-                                        <owl:hasValue rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#HighFat"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mjkoe/ontologies/2022/9/untitled-ontology-20#Recipe"/>
     </owl:Class>
     
