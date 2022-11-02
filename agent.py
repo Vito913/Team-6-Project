@@ -7,12 +7,16 @@ class Agent:
     def __init__(self, path="ontology.owl"):
         # Loads ontology to self.onto
         self.onto = get_ontology(path).load()
+        
+        #saves classes and properties to self.classes and self.properties
         self.class_type = type(list(self.onto.classes())[0])
         self.propery_type = type(list(self.onto.properties())[0])
-        # Sanity check
+
+        # Initializes the reasoner
         with self.onto:
             sync_reasoner_pellet()
-    
+            
+    # Sanity check
     def sanity_check(self):
         print("Classes: "+ "\n")
         for i in self.onto.classes():
