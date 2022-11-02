@@ -8,8 +8,11 @@ def main():
     agent = Agent()
     agent.sanity_check()
     print("Type the query you want to run:")
-    query = input()
-    twitter.get_tweet_dataframe(query)
+    question = input()
+    if agent.query(question):
+        print("This is true according to the ontology.")
+    else:
+        twitter.get_tweet_dataframe(question)
     
 if __name__ == "__main__":
     main()

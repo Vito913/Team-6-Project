@@ -24,28 +24,32 @@ class Agent:
             
         
     def query(self, query):
+        decision = False
+        #for determining the type of query
+        subclassQuestion = False
+
         #the query is transformed into a list of words
         whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
         transformedInput = ''.join(filter(whitelist.__contains__, query))
         sentenceListUncap = transformedInput.split()
         sentenceList = map(lambda word: word.capitalize(), sentenceListUncap)
+
         #looping over the list and mapping words to something in the ontology if possible
         interpretableList = []
         for i in sentenceList:
-            searchWord = '*' + i
-            ontList = self.onto.search(iri = searchWord)
-            if ontList:
-                interpretableList.append(ontList[0])
+            if i == 'Is':
+                subclassQuestion = True
             else:
-                synonyms = []
-                for syn in wordnet.synsets(i.lower()):
-                    for j in syn.lemmas():
-                     synonyms.append(j.name())
-                for synonym in synonyms:
-                    searchSynonym = '*' + synonym.capitalize()
-                    synList = self.onto.search(iri = searchSynonym)
-                    if synList:
-                        interpretableList.append(synList[0])
-                        break
-        return interpretableList
-    
+                searchWord = '*' + i
+                ontList = self.onto.search(iri = searchWord)
+                if ontList:
+                    interpretableList.append(ontList[0])
+        
+        if subclassQuestion:
+            #print(self.onto.get_parents_of(interpretableList[0])[0])
+            #print(interpretableList[1])
+            if interpretableList[1] == self.onto.get_parents_of(interpretableList[0])[0]:
+                decision = True
+         
+
+        return decision
