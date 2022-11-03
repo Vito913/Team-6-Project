@@ -24,8 +24,8 @@ class Agent:
         print("Properties:"+"\n")
         for i in self.onto.properties():
             print(i)
-            
-        
+    
+ 
     def query(self, query):
         #t = true, f = false, u = undecided
         decision = 'u'
@@ -47,7 +47,7 @@ class Agent:
                 sentenceListUncap2.append("low")
             else:
                 sentenceListUncap2.append(word)
-        sentenceList = map(lambda word: word.capitalize(), sentenceListUncap2)
+        sentenceList = [lambda word: word.capitalize(), sentenceListUncap2]
 
         #looping over the list and mapping words to something in the ontology if possible
         interpretableList = []
@@ -84,16 +84,10 @@ class Agent:
                 decision = 'f'
 
         if causalQuestion:
-            causalList = list(self.self.onto.CanCause.get_relations())
+            causalList = list(self.onto.CanCause.get_relations())
             for item in causalList:
                 if (interpretableList[0], interpretableList[1]) == item:
                     decision = 't'
                     break
-
-        if valueQuestion:
-            print("test")
-
-        if someQuestion:
-            print("test")
          
         return decision
