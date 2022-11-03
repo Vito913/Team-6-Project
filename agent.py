@@ -1,6 +1,5 @@
 from owlready2 import *
 from pprint import pprint
-from nltk.corpus import wordnet
 
 class Agent:
     
@@ -28,32 +27,73 @@ class Agent:
             
         
     def query(self, query):
-        decision = False
+        #t = true, f = false, u = undecided
+        decision = 'u'
         #for determining the type of query
         subclassQuestion = False
+        causalQuestion = False
+        valueQuestion = False
+        someQuestion = False
 
-        #the query is transformed into a list of words
+        #the query is transformed into a list of words fit for processing
         whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
         transformedInput = ''.join(filter(whitelist.__contains__, query))
         sentenceListUncap = transformedInput.split()
-        sentenceList = map(lambda word: word.capitalize(), sentenceListUncap)
+        sentenceListUncap2 = []
+        for word in sentenceListUncap:
+            if word == "higher":
+                sentenceListUncap2.append("high")
+            elif word == "lower":
+                sentenceListUncap2.append("low")
+            else:
+                sentenceListUncap2.append(word)
+        sentenceList = map(lambda word: word.capitalize(), sentenceListUncap2)
 
         #looping over the list and mapping words to something in the ontology if possible
         interpretableList = []
-        for i in sentenceList:
-            if i == 'Is':
+
+        for i in range(len(sentenceList)):
+            if sentenceList[i] == 'Is':
                 subclassQuestion = True
+            elif sentenceList[i] == 'Cause':
+                causalQuestion = True
+            elif sentenceList[i] == 'Has':
+                valueQuestion = True
+            elif sentenceList[i] == 'Which':
+                someQuestion = True
             else:
-                searchWord = '*' + i
+                searchWord = '*' + sentenceList[i]
                 ontList = self.onto.search(iri = searchWord)
                 if ontList:
                     interpretableList.append(ontList[0])
-        
-        if subclassQuestion:
-            #print(self.onto.get_parents_of(interpretableList[0])[0])
-            #print(interpretableList[1])
-            if interpretableList[1] == self.onto.get_parents_of(interpretableList[0])[0]:
-                decision = True
-         
+                elif i+1 < len(sentenceList):
+                    concatWord = '*' + sentenceList[i] + '*'
+                    concatList = self.onto.search(iri = concatWord)
+                    nextConcatWord = concatWord = '*' + sentenceList[i+1]
+                    nextConcatList = self.onto.search(iri = nextConcatWord)
+                    finalConcatList= [value for value in concatList if value in nextConcatList]
+                    if finalConcatList:
+                        interpretableList.append(finalConcatList[0])
+                        i += 1
 
+        #answering the question, based on the concepts found and the type of question        
+        if subclassQuestion:
+            if interpretableList[1] == self.onto.get_parents_of(interpretableList[0])[0]:
+                decision = 't'
+            elif interpretableList[0] == self.onto.get_parents_of(interpretableList[1])[0]:
+                decision = 'f'
+
+        if causalQuestion:
+            causalList = list(self.self.onto.CanCause.get_relations())
+            for item in causalList:
+                if (interpretableList[0], interpretableList[1]) == item:
+                    decision = 't'
+                    break
+
+        if valueQuestion:
+            print("test")
+
+        if someQuestion:
+            print("test")
+         
         return decision
