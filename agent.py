@@ -52,7 +52,7 @@ class Agent:
         #looping over the list and mapping words to something in the ontology if possible
         interpretableList = []
 
-        for i in range(len(sentenceList)):
+        for i in range(len(sentenceListUncap2)):
             if sentenceList[i] == 'Is':
                 subclassQuestion = True
             elif sentenceList[i] == 'Cause':
